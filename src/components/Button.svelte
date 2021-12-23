@@ -1,14 +1,22 @@
 <script lang="ts">
-  export let text: string;
+  export let value: string;
   export let double: boolean = false;
   export let triple: boolean = false;
   export let emphasis: boolean = false;
   export let operator: boolean = false;
   export let operation: boolean = false;
+  
+  export let getValues: (value: string) => void = () => {};
 </script>
 
-<button class="button" class:double={double} class:triple={triple} class:emphasis={emphasis} class:operator={operator} class:operation={operation}>
-  {text}
+<button class="button" 
+  class:double={double} 
+  class:triple={triple} 
+  class:emphasis={emphasis} 
+  class:operator={operator} 
+  class:operation={operation}
+  on:click={() => getValues(value)}>
+  {value}
 </button>
 
 <style>
