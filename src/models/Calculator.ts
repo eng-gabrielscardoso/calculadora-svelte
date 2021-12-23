@@ -6,7 +6,8 @@ export default class Calculator {
   #clearScreen: boolean;
   #operation: string;
 
-  constructor(value: string = null, 
+  constructor(
+    value: string = null, 
     accumulator: number = null, 
     clearScreen: boolean = false, 
     operation: string = null
@@ -22,7 +23,8 @@ export default class Calculator {
   }
 
   displayedValue(newValue: string) {
-    return new Calculator((this.#clearScreen || !this.#value) ? newValue : this.#value, 
+    return new Calculator(
+      (this.#clearScreen || !this.#value) ? newValue : this.#value + newValue, 
       this.#accumulator, 
       NOT_CLEAR_SCREEN, 
       this.#operation

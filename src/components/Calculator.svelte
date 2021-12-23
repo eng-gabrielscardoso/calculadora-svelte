@@ -35,7 +35,7 @@
   </Row>
   <Row>
     <Button value="0" double operator getValues={displayed}></Button>
-    <Button value="." operator getValues={displayed}></Button>
+    <Button value="" operator getValues={displayed}></Button>
     <Button value="=" emphasis></Button>
   </Row>
 </div>
