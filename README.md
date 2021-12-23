@@ -1,109 +1,81 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
+# Calculadora Svelte
 
-*Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+<div align="center">  
+  <img src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00">
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+</div>
 
----
 
-# svelte app
+<img src="./.github/img/banner.png" alt="exemplo imagem">
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+> Calculadora simples feita com Svelte, parte do curso de Svelte da Cod3r Cursos
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## 💻 Pré-requisitos
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+* Você instalou a versão mais recente de `NodeJS`, `Git`, e `Visual Studio Code` ou outra IDE de preferência.
+* Você tem uma máquina da sua preferência. De preferência sistemas baseados em `Debian 10`.
+* Você tem familiaridade com `Desenvolvimento front-end` e outras tecnologias adicionais.
+
+## 🚀 Instalação
+
+Para instalar, siga estas etapas:
+
+Linux, Windows e macOS:
+``` 
+git clone https://github.com/eng-gabrielscardoso/calculadora-svelte.git
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+> Verifique se possui permissões para clonar o repositório com o administrador do projeto
+## ☕ Utilização
+
+Para usar, siga estas etapas:
 
 
-## Get started
+1. No diretório da aplicação, rodar o comando para instalação de dependências:
 
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
+```
+npm install 
 ```
 
-...then start [Rollup](https://rollupjs.org):
+2. Rodar o comando para iniciar a aplicação
 
-```bash
+```
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+3. Começar a codar!
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+> Obs.: Caso não queira codar, basta iniciar a aplicação com 
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
+```
+npm start
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+## 🤝 Colaboradores
 
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-## Single-page app mode
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/67348001" width="100px;" alt="Foto do Gabriel Cardoso"/><br>
+        <sub>
+          <b>Gabriel Cardoso</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
+## 📝 Licença
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+O projeto é livre e retirado como parte de uma das atividades proposta pelo curso de Intensivo de Svelte, realizado pela Cod3r Cursos.
 
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+[⬆ Voltar ao topo](#calculadora-svelte)<br>
